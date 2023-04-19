@@ -4,14 +4,13 @@ function renderLicenseBadge(license) {
   //get links to licenses and badges
   switch(license) {
   case 'MIT (very permissive)':
-    let licenseBadge = renderLicenseBadge(license);
-    let licenseInfo = `
+return `
 # License
-<a href ="https://choosealicense.com/licenses/mit/"> MIT </a>
-${licenseBadge};
-    `
+<a href ="https://choosealicense.com/licenses/mit/"> MIT License</a>
 
-    break;
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+`
+;
   case 'GNU (less permissive)':
     // code block
     break;
@@ -52,18 +51,19 @@ ${data.description}
 
 [Questions](#installation)
 
-# <a name="Installation"></a>Installation
+# <a name="Installation">Installation</a>
 ${data.installation}
-# <a name="Usage"></a>Usage
+# <a name="Usage">Usage</a>
 ${data.usage}
 # License
 ${data.license}
-# <a name="Contributions"></a>Contributions
+# <a name="Contributions">Contributions</a>
 ${data.contributing}
-# <a name="Tests"></a>Tests
+# <a name="Tests">Tests</a>
 ${data.tests}
-# <a name="Questions"></a>Questions
+# <a name="Questions">Questions</a>
 ${data.questions}
+${renderLicenseBadge(license)}
 `;
 }
 
