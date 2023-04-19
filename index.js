@@ -27,7 +27,7 @@ const questions = [
     {
         type: 'list',
         message: 'What kind of license would you like?',
-        choices: ['MIT (very permissive)', 'GNU (less permissive)'],
+        choices: ['MIT (very permissive)', 'GNU (less permissive)', 'none'],
         //https://choosealicense.com/licenses/mit/
         //https://choosealicense.com/licenses/gpl-3.0/
         name: 'license',
@@ -54,19 +54,23 @@ const questions = [
       },
 ];
 
+
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(filename, info) {
+  // fs.writeFile('README2.md', info, (err) =>
+  //     err ? console.error(err) : console.log('Success!'))
+}
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer
-  .prompt(...questions)
-  .then((response) =>
-    response.confirm === response.password
-      ? console.log('Success!')
-      : console.log('You forgot your password already?!')
-  );
-}
-
+  .prompt(questions)
+  //.then(response)
+  .then((response) => {
+      data = generateMarkdown(response);
+      fs.writeFile('README2.md', data, (err) =>
+      err ? console.error(err) : console.log('Success!'))
+  })}
+  
 // Function call to initialize app
 init();
