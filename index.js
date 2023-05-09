@@ -16,12 +16,12 @@ const questions = [
       },
     {
         type: 'input',
-        message: 'Add installation instructions',
+        message: 'Add installation instructions:',
         name: 'installation',
       },
     {
         type: 'input',
-        message: 'Add usage instructions/examples',
+        message: 'Add usage instructions/examples(Format like this: ![image description](imagepath.png)):',
         name: 'usage',
       },
     {
@@ -37,24 +37,24 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Add examples of how to run any tests ',
+        message: 'Add examples of how to run any tests: ',
         name: 'tests',
       },
     {
         type: 'input',
-        message: 'What is your GitHub username',
+        message: 'What is your GitHub username?',
         name: 'username',
       },
     {
         type: 'input',
-        message: 'What is your email address',
-        name: 'email',
+        message: 'What is your email address?',
+        name: 'questions',
       },
 ];
 
 //takes in user input and writes new README file
 function writeToFile(filename, info) {
-  fs.writeFile('README1.md', info, (err) =>
+  fs.writeFile('yourREADME.md', info, (err) =>
       err ? console.error(err) : console.log('Success!'))
 }
 
@@ -63,7 +63,7 @@ function init() {
   .prompt(questions)
   .then((response) => {
       data = generateMarkdown(response);
-      fs.writeFile('README1.md', data, (err) =>
+      fs.writeFile('yourREADME.md', data, (err) =>
       err ? console.error(err) : console.log('Success!'))
   })}
   

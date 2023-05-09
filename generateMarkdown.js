@@ -5,7 +5,7 @@ function renderLicenseBadge(license) {
   switch(license) {
   case 'MIT (very permissive)':
 return `
-# License
+## License
 <a href ="https://choosealicense.com/licenses/mit/"> MIT License</a>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -13,7 +13,7 @@ return `
 ;
   case 'GNU (less permissive)':
     return `
-# License
+## License
 <a href ="https://choosealicense.com/licenses/gnu/"> GNU License </a>
 
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
@@ -42,32 +42,30 @@ function generateMarkdown(data) {
 
   return `
 # ${data.title}
-# Description
 ${data.description}
-# Table of Contents 
+## Table of Contents 
 
-[Installation](#installation)
+- [Installation](#installation) 
 
-[Usage](#installation)
+- [Usage](#installation)
 
-[Contributions](#installation)
+- [Contributions](#installation)
+- [Tests](#installation)
 
-[Tests](#installation)
+- [Questions](#installation)
 
-[Questions](#installation)
-
-# <a name="Installation">Installation</a>
+## Installation
 ${data.installation}
-# <a name="Usage">Usage</a>
+## Usage
 ${data.usage}
-# License
+## License
 ${data.license}
-# <a name="Contributions">Contributions</a>
+## Contributing
 ${data.contributing}
-# <a name="Tests">Tests</a>
+## Tests
 ${data.tests}
-# <a name="Questions">Questions</a>
-${data.questions}
+## Questions
+Contact [Cheloe](https://github.com/${data.username}) at [${data.questions}](mailto:${data.questions})
 ${renderLicenseBadge(license)}
 `;
 }
