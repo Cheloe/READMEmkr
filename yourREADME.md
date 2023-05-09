@@ -1,7 +1,7 @@
 
-# asdf
-asdf
-# Table of Contents 
+# READMEmkr
+Issues command line prompts to capture information about user projects and uses the responses to generates a professional, interactive READMEs.
+## Table of Contents 
 
 - [Installation](#installation) 
 
@@ -12,18 +12,16 @@ asdf
 
 - [Questions](#installation)
 
-# Installation
-asdf
-# Usage
-asdf
-# License
-MIT (very permissive)
+## Installation
+Inquirer 8.2.4 and node.js
+## Usage
+![example](assets/example.png)
 ## Contributing
-asdf
+Feel free to fork the repository and add your own features!
 ## Tests
-asdf
+No tests :(
 ## Questions
-Contact [Cheloe](https://github.com/asdf) at [asdf](mailto:asdf)
+Contact [Cheloe](https://github.com/Cheloe) at [cheryl.loeffler@gmail.com](mailto:cheryl.loeffler@gmail.com)
 
 ## License
 <a href ="https://choosealicense.com/licenses/mit/"> MIT License</a>
