@@ -1,34 +1,34 @@
 
-# sdf
+# asdf
 # Description
-asdf
+asdfasdfg
 # Table of Contents 
 
 [Installation](#installation)
 
-[Usage](#installation)
+[Usage](#usage)
 
 [Contributions](#installation)
 
-[Tests](#installation)
+[Tests](#tests)
 
-[Questions](#installation)
+[Questions](#questions)
 
-# <a name="Installation">Installation</a>
-sadf
-# <a name="Usage">Usage</a>
-sdf
+# Installation
+sdfasfd
+# Usage
+asdfasd
 # License
-MIT (very permissive)
-# <a name="Contributions">Contributions</a>
-asdf
-# <a name="Tests">Tests</a>
-asdf
-# <a name="Questions">Questions</a>
+GNU (less permissive)
+# Contributions
+asdfsdafasdf
+# Tests
+sadfsadf
+# Questions
 undefined
 
 # License
-<a href ="https://choosealicense.com/licenses/mit/"> MIT License</a>
+<a href ="https://choosealicense.com/licenses/gnu/"> GNU License </a>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 

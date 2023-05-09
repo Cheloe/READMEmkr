@@ -12,11 +12,16 @@ return `
 `
 ;
   case 'GNU (less permissive)':
-    // code block
-    break;
-  default:
-    return '';
-}
+    return `
+# License
+<a href ="https://choosealicense.com/licenses/gnu/"> GNU License </a>
+
+[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+`
+      break;
+    default:
+      return '';
+  }
 }
 
 // TODO: Create a function that returns the license link
