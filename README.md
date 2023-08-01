@@ -15,13 +15,13 @@ A simple markdown generator for README.md files. Uses Inquirer.js to prompt the 
 
 # Video Demonstration:
 
-The screenshot is broken in the video, but I didn't have time to film another. I fixed it in the example readme. [Video here.](assets/demonstration.mov)
+ [Link to video](https://drive.google.com/file/d/1e4Gf9YiUBR1HZJcnRyat3hvOfXZeonvL/view)
 
 <br>
 
 # Github Repository:
 
-[Cheloe](https://github.com/Cheloe/READMEmkr)
+[READMEmkr](https://github.com/Cheloe/READMEmkr)
 
 <br>
 
@@ -31,6 +31,3 @@ Inquirer prompts:
 
 ![Inquirer](assets/example.png)
 <br><br>
-Generated README.md:
-
-![README Example](assets/README_example.png)
