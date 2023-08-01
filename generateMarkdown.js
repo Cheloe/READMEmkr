@@ -62,7 +62,7 @@ ${data.contributing}
 ## Tests
 ${data.tests}
 ## Questions
-Contact [username](https://github.com/${username}) at [${data.questions}](mailto:${data.questions})
+Contact [${username}](https://github.com/${username}) at [${data.questions}](mailto:${data.questions})
 ${renderLicenseBadge(license)}
 `;
 }
