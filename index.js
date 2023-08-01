@@ -52,12 +52,7 @@ const questions = [
       },
 ];
 
-//takes in user input and writes new README file
-// function writeToFile(filename, info) {
-//   fs.writeFile('./generated-readmes/README.md', info, (err) =>
-//       err ? console.error(err) : console.log('Success!'))
-// }
-
+// function to write README file
 function init() {
     inquirer
   .prompt(questions)
