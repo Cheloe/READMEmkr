@@ -53,17 +53,17 @@ const questions = [
 ];
 
 //takes in user input and writes new README file
-function writeToFile(filename, info) {
-  fs.writeFile('yourREADME.md', info, (err) =>
-      err ? console.error(err) : console.log('Success!'))
-}
+// function writeToFile(filename, info) {
+//   fs.writeFile('./generated-readmes/README.md', info, (err) =>
+//       err ? console.error(err) : console.log('Success!'))
+// }
 
 function init() {
     inquirer
   .prompt(questions)
   .then((response) => {
       data = generateMarkdown(response);
-      fs.writeFile('yourREADME.md', data, (err) =>
+      fs.writeFile('./generated-readmes/README.md', data, (err) =>
       err ? console.error(err) : console.log('Success!'))
   })}
   
